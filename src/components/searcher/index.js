@@ -23,14 +23,13 @@ const Searcher = ({ children }) => {
       <S.Input
         type="text"
         clearInput
-        placeholder=" Pesquisar"
+        placeholder=" Search"
         onKeyPress={handleKeyPress}
         onChange={(event) => setUsernameSearch(event.target.value)}
       />
       <S.Button onClick={submitGetUser}>
         <FaSearch size={13} color="#121212" />
       </S.Button>
-      {/* <S.Find  title='pesquisar'/> */}
       {children}
     </S.Searcher>
   );
