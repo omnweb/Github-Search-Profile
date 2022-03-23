@@ -14,3 +14,13 @@ export const Wrapper = styled.main`
     flex-direction: column;
   }
 `;
+
+
+export const Loading = styled.img`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  // margin: -200px 0 0 -60px;
+  width: 404%;
+  
+  `;

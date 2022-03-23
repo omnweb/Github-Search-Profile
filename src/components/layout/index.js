@@ -1,6 +1,7 @@
 import React from "react";
 import useGithub from "../../hooks/github-hooks";
 import * as S from "./style";
+import imgLoading from "../../assets/loading.gif";
 
 import NoSearch from "../no-search";
 
@@ -10,7 +11,7 @@ const Layout = ({ children }) => {
     <S.Wrapper>
       {githubState.hasUser ? (
         githubState.loading ? (
-          <h1>Loading...</h1>
+          <S.Loading src={imgLoading} alt="loading"/>
         ) : (
           <>{children}</>
         )

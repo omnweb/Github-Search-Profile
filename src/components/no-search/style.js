@@ -10,6 +10,16 @@ export const SWhrapper = styled.div`
   margin: 100px 0 0 -35%;
 
   @media (max-width: 600px) {
-    margin: 100px 0 0 5%;
+    margin: 100px 0 0 0;
+  }
+`;
+export const ImageDefault = styled.img`
+  width: 20%;
+
+  @media (max-width: 600px) {
+    width: 50%;
+  }
+  @media (max-width: 900px) {
+    width: 30%;
   }
 `;

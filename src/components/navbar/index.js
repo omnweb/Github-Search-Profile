@@ -1,12 +1,12 @@
 import React from "react";
 import * as S from "./style";
-import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
+import { FaGithubAlt } from "@react-icons/all-files/fa/FaGithubAlt";
 
 const Navbar = ({ children }) => {
   return (
     <S.Navbar>
       <S.Left>
-        <FaGithub size={30} color="#d3d3d3" />
+        <FaGithubAlt size={40} color="#d3d3d3" />
         {children}
       </S.Left>
     </S.Navbar>

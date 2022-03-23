@@ -4,12 +4,11 @@ import styled from "styled-components";
 export const profileContainer = styled.div`
   display: flex;
   flex-direction: column;
-  //  background: #1e1e1e;
   border-radius: 5px;
 `;
 export const Image = styled.img`
   margin: 5%;
-  width: 30%;
+  width: 35%;
   border-radius: 50%;
   align-self: center;
   z-index: 1;
@@ -17,9 +16,12 @@ export const Image = styled.img`
 
   @media (max-width: 1250px) {
     margin-bottom: 10%;
+    width: 45%;
+
   }
   @media (max-width: 600px) {
     flex-direction: column;
+    width: 30%;
   }
 `;
 export const StatusBar = styled.div`
@@ -32,6 +34,13 @@ export const StatusBar = styled.div`
   padding: 5% 0;
   border-radius: 5px;
   margin-top: 5%;
+
+  @media (max-width: 1250px) {
+    flex-direction: column;
+  }
+  @media (max-width: 600px) {
+    flex-direction: row;
+  }
 `;
 export const ProfileTitle = styled.h1`
     display: flex;

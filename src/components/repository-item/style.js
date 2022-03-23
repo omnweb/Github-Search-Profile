@@ -6,7 +6,7 @@ import { FaGitAlt } from "@react-icons/all-files/fa/FaGitAlt";
 // Repository Item
 export const WrapperItem = styled.div`
   background: #1e1e1e;
-  height: 100px;
+  height: auto;
   border-radius: 5px;
   padding: 2%;
   margin-bottom: 1%;
@@ -15,6 +15,15 @@ export const SH3 = styled.h3`
   font-size: 16px;
   letter-spacing: 1px;
   color: #dfdfdf;
+  @media (max-width: 900px) {
+    line-height: 1;
+    font-size: 14px;
+    font-size: 13px;
+  }
+  @media (max-width: 600px) {
+    line-height: 1;
+    font-size: 11px;
+  }
 
 `;
 export const SP = styled.p`
@@ -23,6 +32,16 @@ export const SP = styled.p`
   line-height: 1;
   letter-spacing: 1px;
   color: #dfdfdf;
+
+  @media (max-width: 900px) {
+    line-height: 1;
+    font-size: 11px;
+    font-size: 10px;
+  }
+  @media (max-width: 600px) {
+    line-height: 1;
+    font-size: 11px;
+  }
 `;
 export const SA = styled.a`
   text-decoration: none;
@@ -32,9 +51,14 @@ export const SA = styled.a`
     color: #663399;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 900px) {
     line-height: 1;
     font-size: 13px;
+    font-size: 12px;
+  }
+  @media (max-width: 600px) {
+    line-height: 1;
+    font-size: 11px;
   }
 `;
 

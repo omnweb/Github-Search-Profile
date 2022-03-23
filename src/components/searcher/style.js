@@ -11,7 +11,7 @@ export const Searcher = styled.div`
   }
 `;
 export const Input = styled.input`
-  height: 26px;
+  height: 31px;
   background: #292929;
   border: none;
   outline: none;
@@ -24,8 +24,8 @@ export const Input = styled.input`
 `;
 
 export const Button = styled.button`
-  height: 30px;
-  width: 30px;
+  height: 35px;
+  width: 35px;
   color: white;
   border: solid 1px #1e1e1e;
   border-radius: 0px 4px 4px 0px;

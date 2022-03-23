@@ -6,7 +6,7 @@ export const Navbar = styled.div`
   display: flex;
   justify-content: self-start;
   align-items: center;
-  height: 50px;
+  height: 60px;
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -38,9 +38,3 @@ export const Right = styled.div`
     flex-direction: row;
   }
 `;
-
-// export const Git = styled(Github)`
-//   color: #dfdfdf;
-//   height: 40px;
-//   align-self: center;
-// `

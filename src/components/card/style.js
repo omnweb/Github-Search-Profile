@@ -8,7 +8,7 @@ export const Card = styled.div`
   display: colum;
   justify-content: center;
   align-items: center;
-  // pading: 5%;
+  
 `;
 export const CardTitle = styled.h5`
     font-size: 12px;
