@@ -11,6 +11,7 @@ export const Navbar = styled.div`
   height: 50px;
   position: fixed;
   width: 100%;
+  z-index: 1000;
 `
 export const Left = styled.div`
   background-color: #000000;  

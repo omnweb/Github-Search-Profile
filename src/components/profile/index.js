@@ -1,34 +1,29 @@
 import React from "react";
 import * as S from "./style";
-import { FaStar } from "@react-icons/all-files/fa/FaStar";
-import { FaUsers } from "@react-icons/all-files/fa/FaUsers";
-import { FaUserFriends } from "@react-icons/all-files/fa/FaUserFriends";
+import defaultImg from "../../assets/default-profile-image.jpg";
+import useGithub from "../../hooks/github-hooks";
 
-
-
-// omponent
-import Card from "./card/index.js";
+// component
+import Card from "../card/index.js";
 
 const Profile = () => {
+  const { githubState } = useGithub();
   return (
     <S.profileContainer>
       <S.Image
-        src="https://avatars.githubusercontent.com/u/66975270?v=4"
+        src={githubState.user.img ? githubState.user.img : defaultImg}
         alt="Avatar"
       />
       <S.User>
-        <S.ProfileTitle>Ovidio Matiazi Neto</S.ProfileTitle>
-        <S.Span> Omnweb</S.Span>
+        <S.ProfileTitle>{githubState.user.name}</S.ProfileTitle>
+        <S.A href={githubState.user.html_url} target="_blank" rel="noreferrer">
+          {githubState.user.login}
+        </S.A>
       </S.User>
-        <S.Incons>
-          <FaUsers size={25} color="#d3d3d3" /> 
-          <FaStar size={25} color="#d3d3d3" /> 
-          <FaUserFriends size={25} color="#d3d3d3"/> 
-        </S.Incons>
       <S.StatusBar>
-        <Card title="Folowers" value="4" icon="FaBeer"/>
-        <Card title="Starreds" value="4" />
-        <Card title="Followings" value="4" />
+        <Card title="Followers" value={githubState.user.followers} icon="Folowing"/>
+        <Card title="Followings" value={githubState.user.followings} icon="Folower"/>
+        <Card title="Repositories" value={githubState.user.public_repos} icon="Code"/>
       </S.StatusBar>
     </S.profileContainer>
   );

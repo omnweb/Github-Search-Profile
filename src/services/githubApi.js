@@ -1,12 +1,12 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseUrl: 'https://api.github.com'
+    baseURL: 'https://api.github.com/'        
 })
 
 export default api;
 
-const users = await api.get('users/omnweb').then(
-    response => response.json());
+// const users = await api.get('users/omnweb').then(
+//     response => JSON.stringify(response.data));
 
-console.log(users);
+// console.log(users);

@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
-
 // Profile
 export const profileContainer = styled.div`
- display: flex;
- flex-direction: column;
-//  background: #1e1e1e;
- border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  //  background: #1e1e1e;
+  border-radius: 5px;
 `;
 export const Image = styled.img`
   margin: 5%;
@@ -24,14 +23,15 @@ export const Image = styled.img`
   }
 `;
 export const StatusBar = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    background: #1e1e1e;
-    padding: 5% 0;
-    border-radius: 0px 0px 5px 5px;  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background: #1e1e1e;
+  padding: 5% 0;
+  border-radius: 5px;
+  margin-top: 5%;
 `;
 export const ProfileTitle = styled.h1`
     display: flex;
@@ -39,6 +39,9 @@ export const ProfileTitle = styled.h1`
     justify-content: center;
     align-items: center;    
     margin-top: 5%;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 1px;
   }
 `;
 export const User = styled.div`
@@ -55,26 +58,15 @@ export const User = styled.div`
     }
   }
 `;
-// export const Label = styled.label`
-//     font-weight: bold;
-//     margin-right: 5px;
-//   }
-// `;
-export const Span = styled.span`
+export const A = styled.a`
     letter-spacing: 1px;
     margin-top: 5%;
+    text-decoration: none;
+    color: #9932CC;
+
+    &:hover {
+      color: #663399 ;
+    }
   }
 `;
 
-export const Incons = styled.i`
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    background: #1e1e1e;
-    margin-top: 3%;
-    padding: 10% 5% 2% 5%;
-    border-radius: 5px 5px 0px 0px;  
-  }
-  `

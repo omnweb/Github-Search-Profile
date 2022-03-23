@@ -6,11 +6,14 @@ import Sidebar from "./components/sidebar";
 import Content from "./components/content";
 import Searcher from "./components/searcher";
 import Navbar from "./components/navbar";
+import Repositories from "./components/repositories/";
+import GithubProvider from "./providers/github-provider";
 
 
 function App() {
   return (
     <>
+    <GithubProvider>
     <Navbar>
       <Searcher />
     </Navbar>
@@ -18,8 +21,11 @@ function App() {
         <Sidebar >
           <Profile />
         </Sidebar>
-        <Content > </Content>
+        <Content >
+          <Repositories />
+        </Content>
       </Layout>
+      </GithubProvider>
     </>
   );
 }

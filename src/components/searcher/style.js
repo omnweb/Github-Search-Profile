@@ -13,8 +13,8 @@ export const Searcher = styled.div`
   }
 `;
 export const Input = styled.input`
-  height: 30px;
-  background: #1e1e1e;
+  height: 26px;
+  background: #292929;
   border: none;
   outline:none;
   color: #dfdfdf;
