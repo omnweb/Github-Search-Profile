@@ -70,7 +70,7 @@ html {
 body {
   margin: 0;
   background: #292929;
-  color: #dfdfdf;
+  color: #d3d3d3;
 }
 
 /**

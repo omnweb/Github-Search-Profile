@@ -42,6 +42,8 @@ export const ProfileTitle = styled.h1`
     font-size: 16px;
     text-align: center;
     letter-spacing: 1px;
+    color: #dfdfdf;
+
   }
 `;
 export const User = styled.div`

@@ -29,6 +29,8 @@ export const Button = styled.button`
   color: white;
   border: solid 1px #1e1e1e;
   border-radius: 0px 4px 4px 0px;
+  color: #dfdfdf;
+
 
   display: flex;
 

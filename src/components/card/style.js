@@ -13,10 +13,14 @@ export const Card = styled.div`
 export const CardTitle = styled.h5`
     font-size: 12px;
     margin: 0 0 20% 0;
+    color: #dfdfdf;
+
   }
 `;
 export const CardValue = styled.span`
   font-weight: bold;
+  color: #dfdfdf;
+
 `;
 
 export const Code = styled(FaCode)`

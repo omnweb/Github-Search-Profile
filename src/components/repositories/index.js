@@ -3,6 +3,7 @@ import * as S from "./style";
 import RepositoryItem from "../repository-item/";
 import useGithub from "../../hooks/github-hooks";
 
+
 const Repositories = () => {
   const { githubState, getUserRepositories, getUserStarred } = useGithub();
   const [userSearchRepositories, setuserSearchRepositories] = useState(false);
@@ -25,8 +26,8 @@ const Repositories = () => {
           selectedTabPanelClassName="is-selected"
         >
           <S.STabList>
-            <S.STab>Repositories</S.STab>
-            <S.STab>Starred</S.STab>
+            <S.STab> Repositories</S.STab>
+            <S.STab> Starred</S.STab>
           </S.STabList>
           <S.STabPanel>
             {githubState.repositories.map((repo) => (
@@ -48,7 +49,7 @@ const Repositories = () => {
                   key={repo.id}
                   name={repo.name}
                   fullName={repo.full_name}
-                  description={repo.description}
+                  description={repo.description ? repo.description : 'No description to this project'}
                   linkTo={repo.html_url}
                 />
               </S.Wrapper>
