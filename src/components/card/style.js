@@ -16,29 +16,18 @@ export const CardTitle = styled.h5`
   }
 `;
 export const CardValue = styled.span`
-    font-weight: bold;  
+  font-weight: bold;
 `;
 
 export const Code = styled(FaCode)`
-font-size: 25px;
-color: #FFD700;
-`
+  font-size: 25px;
+  color: #ffd700;
+`;
 export const Follower = styled(FaUsers)`
-font-size: 25px;
-color: #FFA500;
-`
+  font-size: 25px;
+  color: #ffa500;
+`;
 export const Following = styled(FaUserFriends)`
-font-size: 25px;
-color: #DC143C;
-
-`
-
-
-
-
-// export const Folowers = styled(Users)`
-//   color: #dfdfdf;
-//   height: 40px;
-//   align-self: center;
-// `
-
+  font-size: 25px;
+  color: #dc143c;
+`;

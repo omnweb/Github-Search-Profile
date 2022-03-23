@@ -33,37 +33,43 @@ const GithubProvider = ({ children }) => {
   const contextValue = {
     githubState,
     getUser: useCallback((username) => getUser(username), []),
-    getUserRepositories: useCallback((username) => getUserRepositories(username), []),
+    getUserRepositories: useCallback(
+      (username) => getUserRepositories(username),
+      []
+    ),
     getUserStarred: useCallback((username) => getUserStarred(username), []),
   };
   const getUser = (username) => {
     setGithubState((prevState) => ({
       ...prevState,
-      loading: !prevState.loading
+      loading: !prevState.loading,
     }));
-    api.get(`users/${username}`).then(({ data }) => {
-      setGithubState((prevState) => ({
-        ...prevState,
-        hasUser: true,
-        user: {
-          id: data.id,
-          login: data.login,
-          name: data.name,
-          img: data.avatar_url,
-          html_url: data.html_url,
-          blog: data.blog,
-          location: data.location,
-          followers: data.followers,
-          followings: data.following,
-          public_repos: data.public_repos,
-        },
-      }));
-    }).finally(() => {
-      setGithubState((prevState) => ({
-        ...prevState,
-        loading: !prevState.loading
-      }));
-    })
+    api
+      .get(`users/${username}`)
+      .then(({ data }) => {
+        setGithubState((prevState) => ({
+          ...prevState,
+          hasUser: true,
+          user: {
+            id: data.id,
+            login: data.login,
+            name: data.name,
+            img: data.avatar_url,
+            html_url: data.html_url,
+            blog: data.blog,
+            location: data.location,
+            followers: data.followers,
+            followings: data.following,
+            public_repos: data.public_repos,
+          },
+        }));
+      })
+      .finally(() => {
+        setGithubState((prevState) => ({
+          ...prevState,
+          loading: !prevState.loading,
+        }));
+      });
   };
   const getUserRepositories = (username) => {
     api.get(`users/${username}/repos`).then(({ data }) => {
@@ -71,7 +77,7 @@ const GithubProvider = ({ children }) => {
         ...prevState,
         repositories: data,
       }));
-    })
+    });
   };
   const getUserStarred = (username) => {
     api.get(`users/${username}/starred`).then(({ data }) => {
@@ -79,7 +85,7 @@ const GithubProvider = ({ children }) => {
         ...prevState,
         starred: data,
       }));
-    })
+    });
   };
 
   return (

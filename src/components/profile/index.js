@@ -21,9 +21,21 @@ const Profile = () => {
         </S.A>
       </S.User>
       <S.StatusBar>
-        <Card title="Followers" value={githubState.user.followers} icon="Folowing"/>
-        <Card title="Followings" value={githubState.user.followings} icon="Folower"/>
-        <Card title="Repositories" value={githubState.user.public_repos} icon="Code"/>
+        <Card
+          title="Followers"
+          value={githubState.user.followers}
+          icon="Folowing"
+        />
+        <Card
+          title="Followings"
+          value={githubState.user.followings}
+          icon="Folower"
+        />
+        <Card
+          title="Repositories"
+          value={githubState.user.public_repos}
+          icon="Code"
+        />
       </S.StatusBar>
     </S.profileContainer>
   );

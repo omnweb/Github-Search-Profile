@@ -1,7 +1,6 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
-
-// Container
+// Content
 export const Content = styled.section`
   padding: 5%;
   background: #121212;
@@ -11,4 +10,4 @@ export const Content = styled.section`
   @media (max-width: 600px) {
     margin: 5%;
   }
-`
+`;

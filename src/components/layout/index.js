@@ -2,7 +2,7 @@ import React from "react";
 import useGithub from "../../hooks/github-hooks";
 import * as S from "./style";
 
-import NoSearch from "../no-search"
+import NoSearch from "../no-search";
 
 const Layout = ({ children }) => {
   const { githubState } = useGithub();

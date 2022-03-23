@@ -1,8 +1,6 @@
-import styled from 'styled-components'
-// import {Github} from '@styled-icons/boxicons-logos/Github'
+import styled from "styled-components";
 
-
-// Container
+// Navbar
 export const Navbar = styled.div`
   background-color: #000000;
   display: flex;
@@ -12,9 +10,9 @@ export const Navbar = styled.div`
   position: fixed;
   width: 100%;
   z-index: 1000;
-`
+`;
 export const Left = styled.div`
-  background-color: #000000;  
+  background-color: #000000;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -27,7 +25,7 @@ export const Left = styled.div`
   @media (max-width: 600px) {
     width: 90%;
   }
-`
+`;
 export const Right = styled.div`
   background-color: orange;
   display: flex;
@@ -39,12 +37,10 @@ export const Right = styled.div`
     display: flex;
     flex-direction: row;
   }
-`
+`;
 
 // export const Git = styled(Github)`
 //   color: #dfdfdf;
 //   height: 40px;
 //   align-self: center;
 // `
-
-

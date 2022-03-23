@@ -1,6 +1,7 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import styled from "styled-components";
 
+// Repositories
 export const STabs = styled(Tabs)`
   font-size: 16px;
   width: 100%;
@@ -24,7 +25,7 @@ export const STab = styled(Tab)`
   cursor: pointer;
   user-select: none;
   margin-right: 5px;
-  
+
   &:focus {
     outline: none;
   }
@@ -36,7 +37,6 @@ export const STab = styled(Tab)`
     z-index: 999;
   }
 `;
-
 
 export const STabPanel = styled(TabPanel)`
   background: #292929;
@@ -50,12 +50,10 @@ export const STabPanel = styled(TabPanel)`
   z-index: 0;
 
   &.is-selected {
-      display: block;
+    display: block;
   }
-
 `;
 
 export const Wrapper = styled.div`
-line-height: 0.5;
-`
-
+  line-height: 0.5;
+`;

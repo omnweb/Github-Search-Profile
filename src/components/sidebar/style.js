@@ -1,7 +1,6 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
-
-// Container
+// Sidebar
 export const Sidebar = styled.aside`
   padding: 5%;
   background-color: #121212;
@@ -10,9 +9,8 @@ export const Sidebar = styled.aside`
   border-radius: 5px;
   // position: relative;
 
-
   @media (max-width: 600px) {
     margin: 70px 5% 0px 5%;
     height: auto;
   }
-`
+`;

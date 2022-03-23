@@ -1,4 +1,3 @@
-
 // components
 import Layout from "./components/layout";
 import Profile from "./components/profile";
@@ -9,22 +8,21 @@ import Navbar from "./components/navbar";
 import Repositories from "./components/repositories/";
 import GithubProvider from "./providers/github-provider";
 
-
 function App() {
   return (
     <>
-    <GithubProvider>
-    <Navbar>
-      <Searcher />
-    </Navbar>
-      <Layout>
-        <Sidebar >
-          <Profile />
-        </Sidebar>
-        <Content >
-          <Repositories />
-        </Content>
-      </Layout>
+      <GithubProvider>
+        <Navbar>
+          <Searcher />
+        </Navbar>
+        <Layout>
+          <Sidebar>
+            <Profile />
+          </Sidebar>
+          <Content>
+            <Repositories />
+          </Content>
+        </Layout>
       </GithubProvider>
     </>
   );
